@@ -11,16 +11,18 @@ def create_board():
 
 
 def show_tips():
-	print('\n\nUse 1-9 to play.')
-	print('Just like Num keys')
-	print('┌───┬───┬───┐' )
-	print('│ 7 │ 8 │ 9 │')
-	print('├───┼───┼───┤')
-	print('│ 4 │ 5 │ 6 │')
-	print('├───┼───┼───┤')
-	print('│ 1 │ 2 │ 3 │')
-	print('└───┴───┴───┘')
-
+	print('\n\n')
+	print('You can win 50% of the games and draw the rest.')
+	print('Use 1-9 to play.')
+	print('Just like Num keys:')
+#	┌───┬───┬───┐
+#	│ 7 │ 8 │ 9 │
+#	├───┼───┼───┤
+#	│ 4 │ 5 │ 6 │
+#	├───┼───┼───┤
+#	│ 1 │ 2 │ 3 │
+#	└───┴───┴───┘
+	print_board('123456789')
 
 def ask_mark_type():
 	while True:
@@ -51,7 +53,7 @@ def print_board(board):
 
 def ask_input():
 	while True:
-		choice = input('Please, enter valid position (1-9): ')
+		choice = input('Please, enter a valid position (1-9): ')
 		if validate(choice) == 'correct':
 			break
 	return int(choice) - 1
@@ -144,7 +146,7 @@ def check_result(board, mark):
 def result_info(result, who):
 	print('GAME FINISHED.')
 	if result == 'draw':
-		print('The resalut is: draw :(')
+		print('The resalut is: a draw :(')
 	else:
 		print(f'{who.upper()} has won the game. Congratulations.')
 

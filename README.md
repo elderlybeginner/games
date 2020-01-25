@@ -6,5 +6,5 @@ Learning Python.
 
 ```
 Any suggestion are wellcome
-Help me, please, to make code more pythonic
+Help me, please, to make the code more pythonic
 ```
