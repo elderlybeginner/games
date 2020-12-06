@@ -3,6 +3,7 @@
 Learning Python.
 
 1. Tic-tac-toe (text version)
+2. Eight queens puzzle (text version)
 
 ```
 Any suggestion are wellcome
